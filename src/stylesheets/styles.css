@@ -30,6 +30,10 @@ body {
     background-color:var(--rose-50);
 }
 
+img {
+    border-radius: 8px;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -46,15 +50,13 @@ body {
     margin-bottom: 32px;
 }
 
-
-
 .products__cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 0;
-    gap: 40px 30px;
+    gap: 150px 30px;
 }
 
 .products {
@@ -65,6 +67,67 @@ body {
     width: 250px;
     height: 250px;
     border: none;
+    border-radius: 10px;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.product__image {
+    height: 250px;
+    width: 250px;
+}
+
+.atc-btn {
+    color: var(--rose-900);
+    padding: 12px;
+    border-radius: 30px;
+    border-color: var(--rose-400);
+    width: 150px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    background-color: var(--white);
+    position: absolute;
+    bottom: -9px;
+    left: 50px;
+}
+
+
+
+/* ATC Active State */
+
+.cart-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.product__details {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:space-between;
+    margin-top: 40px;
+    gap: 3px;
+}
+
+.product__category {
+    font-size: 14px;
+    color: var(--rose-500);
+}
+
+.product__name {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--rose-900);
+}
+
+.product__price {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--red);
 }
 
 
